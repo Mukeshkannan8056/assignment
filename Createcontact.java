@@ -34,10 +34,8 @@ public class Createcontact {
 		driver.findElement(By.id("updateContactForm_description")).clear();
 		driver.findElement(By.id("updateContactForm_importantNote")).sendKeys("updated");
 		driver.findElement(By.xpath("/html/body/div[6]/div/div[2]/div[2]/div[1]/div/form/div/div[2]/table/tbody/tr[8]/td[2]/input")).click();
-		
-		
-		
-		
+		String title = driver.getTitle();
+		System.out.println(title);
 	}
 	
 
